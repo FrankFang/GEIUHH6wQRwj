@@ -33,11 +33,15 @@ export default {
     width: $h2;
     background:white;
     border-radius: $h2 / 2;
+    transition: left 250ms;
   } 
   button.checked{
     background: blue;
   }
   button.checked > span {
     left: calc(100% - #{$h2} - 2px);
+  }
+  button:focus{
+    outline: none;
   }
 </style>
