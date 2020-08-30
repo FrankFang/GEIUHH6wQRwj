@@ -13,7 +13,6 @@
 </Dialog>
 <h1>示例2</h1>
 <Button @click="showDialog">show</Button>
-</div>
 </template>
 
 <script lang="ts">
