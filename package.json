@@ -5,6 +5,7 @@
     "dist/lib/*"
   ],
   "main": "dist/lib/gulu.js",
+  "module": "dist/lib/gulu.esm.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
