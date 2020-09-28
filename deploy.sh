@@ -8,4 +8,4 @@ git branch -M master &&
 git remote add origin git@gitee.com:frankfang/gulu-ui-website-1.git &&
 git push -f -u origin master &&
 cd -
-echo https://fangyinghang.com/gulu-ui-website-1/index.html
+echo https://frankfang.gitee.io/gulu-ui-website-1/
