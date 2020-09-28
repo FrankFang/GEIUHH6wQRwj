@@ -7,9 +7,9 @@
 <script lang="ts" setup="props">
 import { computed } from "vue";
 declare const props: {
-  theme: 'button' | 'text' | 'link';
-  size: 'normal' | 'big' | 'small';
-  level: 'normal' | 'main' | 'danger';
+  theme?: 'button' | 'text' | 'link';
+  size?: 'normal' | 'big' | 'small';
+  level?: 'normal' | 'main' | 'danger';
   disabled: boolean;
   loading: boolean;
 }
