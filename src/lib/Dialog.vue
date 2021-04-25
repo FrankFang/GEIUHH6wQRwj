@@ -61,12 +61,12 @@ export const onClickOverlay = () => {
   }
 }
 export const onClickOk = () => {
-  if (props.ok?.() !== false) {
+  if (props.ok && props.ok() !== false) {
     close()
   }
 }
 export const onClickCancel = () => {
-  props.cancel?.()
+  props.cancel && props.cancel()
   close()
 }
 </script>
