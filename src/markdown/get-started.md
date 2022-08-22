@@ -3,7 +3,7 @@
 
 然后在你的代码中写入下面的代码
 
-```
+```javascript
 import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "gulu-ui-1"
 ```
 
@@ -13,7 +13,7 @@ import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "gulu-ui-1"
 
 代码示例：
 
-```
+```html
 <template>
   <div>
     <Button>按钮</Button>
