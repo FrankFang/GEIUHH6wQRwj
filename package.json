@@ -4,30 +4,34 @@
   "files": [
     "dist/lib/*"
   ],
-  "main": "dist/lib/gulu.js",
-  "module": "dist/lib/gulu.esm.js",
+  "main": "dist/lib/gulu.umd.js",
+  "module": "dist/lib/gulu.es.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build:website": "vite build",
+    "build:lib": "vite build -c vite.lib.config.ts"
   },
   "resolutions": {
     "node-sass": "npm:sass@latest"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "3.0.3",
+    "github-markdown-css": "4.0.0",
+    "marked": "1.1.1",
+    "prismjs": "1.21.0",
     "rollup-plugin-esbuild": "4.9.3",
     "rollup-plugin-scss": "3.0.0",
     "rollup-plugin-terser": "7.0.2",
-    "sass": "1.54.5",
+    "sass": "^1.54.5",
     "vite": "3.0.9",
-    "marked": "1.1.1",
     "vue": "3.2.37",
-    "vue-router": "4",
-    "prismjs": "1.21.0",
-    "github-markdown-css": "4.0.0"
+    "vue-router": "4"
   },
-  "peerDependencies": {
-    "vue": "3.2.37",
-    "github-markdown-css": "4.0.0"
+  "exports": {
+    ".": {
+      "import": "./dist/lib/gulu.es.js",
+      "require": "./dist/lib/gulu.umd.js"
+    },
+    "./dist/lib/style.css": "./dist/lib/style.css"
   }
 }
