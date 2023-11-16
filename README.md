@@ -14,5 +14,6 @@
 
 ## 库文件打包步骤
 
-1. 运行 rollup -c
-2. 得到的 dist/lib 目录就是编译后的库文件所在目录
+1. 使用 `yarn global add rollup@2` 安装 rollup
+2. 运行 rollup -c
+3. 得到的 dist/lib 目录就是编译后的库文件所在目录
